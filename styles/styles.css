@@ -1,0 +1,954 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  max-width: 1920px;
+  margin: auto;
+  font-family: "Inter", sans-serif;
+  background: #f9f9f9;
+}
+
+img {
+  display: block;
+  margin: 10px auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Nav */
+nav {
+  padding: 20px;
+  margin: 0px 100px;
+  color: white;
+  position: absolute;
+  top: 0;
+  z-index: 11;
+  max-width: 1620px;
+  width: 100%;
+}
+
+.logoAndMenu {
+  overflow: hidden;
+}
+
+.logoAndMenu ul {
+  list-style: none;
+  display: flex;
+  margin: 20px 0px;
+  justify-content: center;
+}
+
+.logoAndMenu ul li {
+  margin: 0px 20px;
+  font-size: 18px;
+  width: max-content;
+  font-weight: 700;
+  line-height: normal;
+  color: #fff;
+  text-align: center;
+}
+
+.quickLinks {
+  padding: 12px 16px;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+.quickLinks .navIcons {
+  width: 139px;
+  height: 20px;
+  display: none;
+}
+.quickLinks .iconButton {
+  background: none;
+  font-size: 18px;
+  border: none;
+  color: white;
+  margin: 0px 5px;
+}
+
+.quickLinks .textButton {
+  border-radius: 5px;
+  border: 1px solid #dfdbe8;
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+.quickLinks .textButton span {
+  margin: 0px 5px;
+}
+
+.cartTotal {
+  border-radius: 50%;
+  background: white;
+  color: red;
+  padding: 2px;
+}
+
+.activeButton {
+  border: 1px solid red !important;
+  background: red !important;
+  color: white;
+}
+
+/* Hero */
+
+.hero {
+  position: relative;
+  color: white;
+  background-image: url("../assets/heroBG.svg");
+  height: 970px;
+  margin-top: -20px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #d32053;
+  align-items: center;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 40px;
+  position: relative;
+  margin-top: 200px;
+  padding-left: 80px;
+  max-width: 1620px;
+  height: 650px;
+  /* background: linear-gradient(
+    90deg,
+    black,
+    rgb(28, 28, 146),
+    blue,
+    red,
+    rgb(172, 92, 92)
+  ); */
+  background-image: url("../assets/heroCard.svg");
+  background-size: cover;
+}
+
+.heroLeft {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* background: radial-gradient(
+    hsla(242, 88.4%, 45.3%, 1),
+    hsl(242deg 88.4% 45.3% / 50%),
+    #00000052
+  ); */
+  padding: 0px 20px;
+}
+
+.heroLeft h2 {
+  font-size: 60px;
+}
+
+.heroRight {
+  /* background: radial-gradient(
+    hsla(11, 80%, 38%, 1),
+    hsl(11deg 80% 38% / 55%),
+    hsl(0deg 0% 0%)
+  ); */
+  height: 100%;
+  width: 100%;
+  padding: 0px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+}
+.sliderPagination {
+  height: 5px;
+  width: 15px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 0px 4px;
+}
+.sliderPaginationActive {
+  background: white;
+  width: 25px;
+}
+
+.bgText {
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+  font-size: 200px;
+  -webkit-text-stroke: 1px #dddddd;
+  color: transparent;
+  z-index: 1;
+  opacity: 0.2;
+  padding-left: 80px;
+}
+
+/* heroTicket */
+.heroTicket {
+  background: yellow;
+  width: 295px;
+  height: 423px;
+  border-radius: 40px;
+  padding: 20px;
+  color: #460bc6;
+  margin: auto;
+
+  position: absolute;
+  transform: rotate(25deg);
+  left: 30%;
+  opacity: 0.6;
+}
+
+.heroTicketBg {
+  transform: rotate(0deg);
+
+  opacity: 1;
+}
+
+.heroTicketContent {
+  border: 2px dashed #460bc6;
+  border-radius: 40px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.heroTicketContent h1 {
+  font-size: 50px;
+}
+.heroTicketContent p {
+  font-size: 30px;
+  background: #460bc6;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+/* Card */
+#cards {
+  padding: 0px 100px;
+  margin-top: 150px;
+}
+.card {
+  max-width: 520px;
+  min-width: 460px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 20, 44, 0.12);
+  padding: 30px;
+}
+.card .cardHead {
+  display: flex;
+  justify-content: space-between;
+}
+.card .cardHead h1 {
+  color: #080825;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.card .cardHead .cardButton {
+  width: 100px;
+  height: 42px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #d3205317 3.44%, #460bc636 95.97%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .cardHead .cardButton h3 {
+  background: var(--Gr, linear-gradient(135deg, #d32053 3.44%, #460bc6 95.97%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Draw  */
+.card .drawCard {
+  border-radius: 5px;
+  border: 1px solid #c1b9d3;
+  margin: 25px auto;
+  background: #fff;
+  padding: 0px 10px;
+}
+.drawCardActive {
+  box-shadow: 0px 0px 40px 0px rgba(0, 20, 44, 0.12);
+}
+.card .drawCard img {
+  width: 100%;
+}
+
+.card .drawCard .cardtags {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .drawCard .cardtags button {
+  display: inline-flex;
+  padding: 4px 10px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 3px;
+  background: #460bc6;
+  color: #fff;
+
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.card .drawCard h2 {
+  color: #d32053;
+  margin: 20px 0px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+.card .drawCard h4 {
+  color: #334356;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.cardActions {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.cardActions .quantity {
+  width: 152px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #c1b9d3;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.cardActions .quantity button {
+  color: #00142c;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 15px 20px;
+  background: white;
+  border: 1px solid #c1b9d3;
+}
+
+.cardActions .addToCartBtn {
+  width: 248px;
+  height: 50px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #d32053 3.44%, #460bc6 95.97%);
+  padding: 3px;
+}
+
+.cardActions .addToCartBtn .addToCartBtnBg {
+  background: white;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+}
+
+.cardActions .addToCartBtn .addToCartBtnBg button {
+  background: linear-gradient(135deg, #d32053 3.44%, #460bc6 95.97%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+.gradintTest {
+  background: linear-gradient(135deg, #d32053 3.44%, #460bc6 95.97%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.available {
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #eeebf5;
+  background: #eeebf5;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.available p {
+  color: #4d5b6c;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+}
+.available h3 {
+  color: #00142c;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* lottery */
+
+.card .lotteryCards {
+  background: linear-gradient(135deg, #d32053 3.44%, #460bc6 95.97%);
+  text-align: center;
+  padding: 20px 0px;
+  color: white;
+  margin: 20px 0px;
+}
+.card .lotteryCards .lotteryCard p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.card .lotteryCards .lotteryCard h2 {
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.68px;
+}
+
+.card .lotteryCards .lotteryCard .coutdown {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+}
+.card .lotteryCards .lotteryCard .coutdown .count {
+  margin: 0px 10px;
+}
+.card .lotteryCards .lotteryCard .coutdown p {
+  border-radius: 100%;
+  padding: 10px;
+  background: #d32053;
+  border: 1px solid white;
+}
+
+/* Lotter => Slot */
+.card .slot {
+  border-radius: 5px;
+  border: 1px solid #c1b9d3;
+  width: 100%;
+  background: #fff;
+}
+.card .slot h2 {
+  font-size: 18px;
+  font-weight: 700;
+  background: #00142c;
+  color: white;
+  padding: 15px 30px;
+}
+
+.card .slot .activeSlots {
+  color: #00142c;
+  margin: 30px 20px;
+}
+.card .slot .activeSlots h1 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 10px 0px;
+}
+.card .slot .activeSlots ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+}
+.card .slot .activeSlots ul li {
+}
+.card .slot .activeSlots ul li button {
+  padding: 24px;
+  color: #00142c;
+  border-radius: 5px;
+  border: 1px solid #dfdbe8;
+  background: #fff;
+}
+
+.slotPending {
+  color: #dfdbe8 !important;
+}
+
+/* Lotter => Line */
+.card .line {
+  border-radius: 5px;
+  border: 1px solid #c1b9d3;
+  width: 100%;
+  background: #fff;
+}
+.card .line h2 {
+  font-size: 18px;
+  font-weight: 700;
+
+  color: white;
+  padding: 15px 30px;
+}
+
+.card .line .lines {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  padding: 30px;
+}
+
+.card .line li {
+}
+.card .line li button {
+  padding: 8px;
+  color: #00142c;
+  border-radius: 5px;
+  border: 1px solid #dfdbe8;
+  background: #fff;
+}
+
+.activeLine {
+  background: #d32053 !important;
+  color: white !important;
+}
+
+/* Winners Lists */
+
+#winners {
+  position: relative;
+  margin-top: 150px;
+}
+#winners h1 {
+  color: #00142c;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 67px;
+  margin-bottom: 50px;
+  padding: 0px 100px;
+}
+
+#winners .winnersBackground {
+  position: absolute;
+  z-index: -1;
+}
+.winners {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 100px;
+}
+.winners .winnersTable {
+  width: 795px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 20, 44, 0.12);
+  padding-left: 23px;
+  padding-top: 30px;
+  padding-right: 23px;
+}
+
+.winners .winnersTable .winnersTableHead {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+
+.winners .winnersTable h2 {
+  color: #00142c;
+  font-size: 24px;
+}
+.winners .winnersTable p {
+  color: #4d5b6c;
+  font-size: 16px;
+}
+
+.winners .winnersTable table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.winners .winnersTable table th,
+td {
+  border: 0.6px solid #dfdbe8;
+  padding: 8px;
+  text-align: left;
+  color: #4d5b6c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15.659px;
+}
+
+.winners .winnersTable table th {
+  background-color: #f6f4f9;
+}
+.winners .winnersTable table td {
+  font-weight: 700 !important;
+}
+
+.winnersVideo {
+  width: 795px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 20, 44, 0.12);
+}
+.winnersVideo .winnersVideoimg {
+  margin: 20px auto;
+}
+
+.winnersVideo button {
+  border: none;
+  background: white;
+}
+.winnersVideo .winnersVideoPlayList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 30px;
+}
+.winnersVideo .winnersVideoPlayList .playlists {
+  display: flex;
+}
+.winnersVideo .winnersVideoPlayList .playlists img {
+  margin: 0px 10px;
+}
+
+.map {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+  margin-right: 100px;
+}
+
+.map .mapSubContent {
+  display: flex;
+  text-align: right;
+}
+.map .mapSubContent p {
+  margin: 0px 40px;
+  color: #334356;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.map .mapSubContent p span {
+  font-weight: 700;
+}
+
+.liveMap {
+  background: rgb(177, 177, 177);
+}
+.liveMap iframe{
+  height: 700px;
+  width: 100%;
+}
+
+/* Lattest News */
+#lattestNews {
+  position: relative;
+  margin-top: 150px;
+  padding: 0px 100px;
+}
+.lattestNewsHead {
+  display: flex;
+  justify-content: space-between;
+}
+.lattestNewsHeadTitle {
+  color: #00142c;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 67px;
+  margin-bottom: 50px;
+}
+
+.lattestNewsHead .cardButton {
+  width: 100px;
+  height: 42px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #d3205317 3.44%, #460bc636 95.97%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lattestNewsHead .cardButton button {
+  background: var(--Gr, linear-gradient(135deg, #d32053 3.44%, #460bc6 95.97%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+}
+
+.lattestNewsContent {
+  display: flex;
+  flex: 4;
+}
+.lattestNewsContentCard {
+  margin: 10px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 20, 44, 0.12);
+}
+.lattestNewsContentCard img {
+  display: block;
+  width: 100%;
+  height: 320px;
+}
+.lattestNewsContentCard img {
+}
+.lattestNewsContentCard h2 {
+  color: #00142c;
+  font-size: 20px;
+  font-weight: 700;
+}
+.lattestNewsContentCard p {
+  color: #334356;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 10px 0px;
+}
+.lattestNewsContentCard button {
+  background: var(--Gr, linear-gradient(135deg, #d32053 3.44%, #460bc6 95.97%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  margin: 10px 0px;
+}
+
+/* downloadApp */
+#downloadApp {
+  margin-top: 150px;
+}
+
+.downloadApp {
+  position: relative;
+}
+.downloadApp svg {
+  position: absolute;
+  z-index: -2;
+}
+
+.downloadContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 200px 100px;
+}
+.downloadContent .downloadContentLeft {
+  text-align: left;
+}
+.downloadContent .downloadContentLeft h1 {
+  color: #00142c;
+
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 67px;
+}
+.downloadContent .downloadContentLeft p {
+  color: #334356;
+  margin: 30px 0px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.32px;
+}
+.downloadContent .downloadContentLeft .downloadIcons {
+  display: flex;
+}
+
+.bglogo {
+  position: absolute;
+  z-index: -1;
+  left: 25%;
+}
+.downloadContent .downloadContentRight {
+  position: relative;
+}
+.downloadContent .downloadContentRight .mobileScreen {
+  background-image: url("../assets/images/Blue.png");
+  background-position: center;
+  background-size: cover;
+  height: 580px;
+  width: 286px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+}
+.downloadContent .downloadContentRight .mobileScreen img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+.mobileScreen:first-child {
+  transform: rotate(-20deg);
+  transform-origin: top center;
+}
+.mobileScreen:last-child {
+  transform: rotate(20deg);
+  transform-origin: top center;
+  z-index: -1;
+}
+
+/* Footer */
+.blueGlow {
+}
+
+.footer {
+  background-image: url("../assets/images/f.svg");
+  background-position: center;
+  background-size: cover;
+  height: 673px;
+  overflow: hidden;
+}
+
+.footer .footerContent {
+  padding: 150px 100px;
+  color: #ffffff;
+}
+.footer .footerContent .footerMenus {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer .footerContent .footerMenus .footerMenusChild {
+  flex: 1;
+  margin: 10px;
+}
+.footer .footerContent .footerMenus .footerMenusChild img {
+  margin: 10px 0px;
+}
+.footer .footerContent .footerMenus .footerMenusChild .footerIcons {
+  display: flex;
+  margin: 10px 0px;
+}
+.footer
+  .footerContent
+  .footerMenus
+  .footerMenusChild
+  .footerIcons
+  .footerIconButton {
+  background: white;
+  font-size: 18px;
+  border: none;
+  color: rgb(0, 0, 0);
+  margin: 0px 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.footer .footerContent .footerMenus .footerMenusChild h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.footer .footerContent .footerMenus .footerMenusChild ul {
+  margin: 30px 0px;
+}
+.footer .footerContent .footerMenus .footerMenusChild ul li {
+  margin: 20px 0px;
+}
+.footer .footerContent .footerMenus .footerMenusChild ul li a {
+  color: #fff;
+  text-decoration: solid;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.footer .footerContent .footerMenus .footerMenusChild input[type="email"] {
+  width: 242px;
+  height: 50px;
+  background: #fff;
+  border-radius: 5px;
+  padding-left: 25px;
+  color: black;
+  border: none;
+  font-weight: 700;
+}
+.footer .footerContent .footerMenus .footerMenusChild input[type="submit"] {
+  width: 118px;
+  height: 50px;
+  color: #fff;
+  background: #d32053;
+  outline: none;
+  border: none;
+  font-weight: 700;
+}
+
+.footer .footerContent .footerApps {
+  background: #d9d9d92b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0px;
+  border-radius: 5px;
+}
+
+/* background: linear-gradient(90deg, #d32053, #8c158c, #4a0bca, #0000ff); */
+
+/* Medium devices (tablets, 640px and up) */
+@media only screen and (min-width: 768px) {
+  /* Nav */
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .logoAndMenu {
+    display: flex;
+  }
+  .quickLinks .navIcons {
+    display: block;
+  }
+  #cards {
+    display: flex;
+    justify-content: space-around;
+  }
+}

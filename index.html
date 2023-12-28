@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Project - Royex Technologies</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Aewsome Icon -->
+    <script
+      src="https://kit.fontawesome.com/c322e55666.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logoAndMenu">
+        <img src="./assets/logo.png" alt="" />
+        <ul>
+          <li>Draw</li>
+          <li>Lottery</li>
+          <li>Scratch and win</li>
+        </ul>
+      </div>
+      <div class="quickLinks">
+        <div class="navIcons">
+          <button class="iconButton">
+            <i class="fa-brands fa-facebook"></i>
+          </button>
+          <button class="iconButton">
+            <i class="fa-brands fa-linkedin"></i>
+          </button>
+          <button class="iconButton">
+            <i class="fa-brands fa-instagram"></i>
+          </button>
+          <button class="iconButton">
+            <i class="fa-brands fa-youtube"></i>
+          </button>
+        </div>
+        <button class="textButton">
+          <i class="fa-solid fa-wallet"></i> <span>Wallet</span>
+        </button>
+        <button class="textButton">
+          <i class="fa-solid fa-user"></i> <span>Account</span>
+        </button>
+        <button class="textButton activeButton">
+          <i class="fa-solid fa-cart-shopping"></i><span>Cart</span>
+          <span class="cartTotal">02</span>
+        </button>
+        <button class="textButton">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section>
+      <!-- Hero -->
+      <div class="hero">
+        <!-- Slides -->
+        <div class="slider">
+          <h2 class="bgText">Millionaire</h2>
+          <div class="heroLeft">
+            <h2>
+              Guarantee your entry <br />
+              to becoming a <br />
+              <span style="font-size: 100px"> Millionaire</span>
+            </h2>
+
+            <div class="pagination">
+              <div class="sliderPagination"></div>
+              <div class="sliderPaginationActive sliderPagination"></div>
+              <div class="sliderPagination"></div>
+              <div class="sliderPagination"></div>
+            </div>
+          </div>
+          <div class="heroRight">
+            <!-- Hero Ticket -->
+
+            <div class="heroTicket">
+              <div class="heroTicketContent">
+                <h1>BUY</h1>
+                <p>For Only</p>
+                <h1>35 <span>Aed</span></h1>
+              </div>
+            </div>
+            <div class="heroTicket heroTicketBg">
+              <div class="heroTicketContent">
+                <h1>BUY</h1>
+                <p>For Only</p>
+                <h1>36<span>Aed</span></h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards -->
+    <section id="cards">
+      <!-- Draw -->
+      <div class="card">
+        <div class="cardHead">
+          <h1>Draw</h1>
+
+          <div class="cardButton">
+            <h3>View All</h3>
+          </div>
+        </div>
+        <div class="drawCards">
+          <div class="drawCard">
+            <img src="./assets//images/img.png" alt="" />
+            <img src="./assets//images/subImg.png" alt="" />
+            <div class="cardtags">
+              <button>Bronze Pen</button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+              >
+                <rect
+                  x="0.499113"
+                  y="0.499113"
+                  width="29.0018"
+                  height="29.0018"
+                  rx="4.50089"
+                  fill="white"
+                  stroke="#DFDBE8"
+                  stroke-width="0.998226"
+                />
+                <mask
+                  id="mask0_1_569"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="7"
+                  y="7"
+                  width="16"
+                  height="16"
+                >
+                  <rect x="7" y="7" width="16" height="16" fill="#5C6978" />
+                </mask>
+                <g mask="url(#mask0_1_569)">
+                  <path
+                    d="M15.0007 21.4953L14.034 20.623C12.2895 19.0572 10.9033 17.6954 9.87532 16.5376C8.84776 15.3803 8.33398 14.1586 8.33398 12.8724C8.33398 11.8211 8.68398 10.9431 9.38398 10.2385C10.084 9.53394 10.9562 9.18164 12.0007 9.18164C12.5895 9.18164 13.1451 9.30735 13.6673 9.55877C14.1895 9.81063 14.634 10.1547 15.0007 10.5908C15.3673 10.1547 15.8118 9.81063 16.334 9.55877C16.8562 9.30735 17.4118 9.18164 18.0007 9.18164C19.0451 9.18164 19.9173 9.53394 20.6173 10.2385C21.3173 10.9431 21.6673 11.8211 21.6673 12.8724C21.6673 14.1586 21.1535 15.3803 20.126 16.5376C19.098 17.6954 17.7118 19.0572 15.9673 20.623L15.0007 21.4953ZM15.0007 19.6835C16.5895 18.2296 17.8758 16.977 18.8593 15.9256C19.8424 14.8743 20.334 13.8566 20.334 12.8724C20.334 12.2013 20.1118 11.6421 19.6673 11.1948C19.2229 10.7474 18.6673 10.5237 18.0007 10.5237C17.4784 10.5237 16.9951 10.6718 16.5507 10.968C16.1062 11.2646 15.8007 11.6421 15.634 12.1007H14.3673C14.2007 11.6421 13.8951 11.2646 13.4507 10.968C13.0062 10.6718 12.5229 10.5237 12.0007 10.5237C11.334 10.5237 10.7784 10.7474 10.334 11.1948C9.88954 11.6421 9.66732 12.2013 9.66732 12.8724C9.66732 13.8566 10.1591 14.8743 11.1427 15.9256C12.1258 16.977 13.4118 18.2296 15.0007 19.6835Z"
+                    fill="#D32053"
+                  />
+                </g>
+              </svg>
+            </div>
+            <h2>
+              <span>WIN:</span> <span style="color: #00142c">500</span>
+              <span style="color: #00142c; font-weight: 400">AED</span>
+            </h2>
+            <h4>
+              Entry Price:
+              <span style="color: #d32053; font-weight: 700">10.00 AED</span>
+            </h4>
+            <div class="cardActions">
+              <div class="quantity">
+                <button>-</button>
+                <button>1</button>
+                <button>+</button>
+              </div>
+              <div class="addToCartBtn">
+                <div class="addToCartBtnBg">
+                  <button>Add To Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="available">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                >
+                  <mask
+                    id="mask0_1_545"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="30"
+                    height="30"
+                  >
+                    <rect width="30" height="30" fill="#0D70F3" />
+                  </mask>
+                  <g mask="url(#mask0_1_545)">
+                    <path
+                      d="M13.6875 23.5625L8.625 18.5L10.9688 16.1562L13.6875 18.875L19.0938 13.4688L21.4375 15.8125L13.6875 23.5625ZM6.0625 28.4375C5.14583 28.4375 4.36458 28.1146 3.71875 27.4688C3.07292 26.8229 2.75 26.0417 2.75 25.125V7.25C2.75 6.33333 3.07292 5.55208 3.71875 4.90625C4.36458 4.26042 5.14583 3.9375 6.0625 3.9375H6.3125V1.5625H9.625V3.9375H20.375V1.5625H23.6875V3.9375H23.9375C24.8542 3.9375 25.6354 4.26042 26.2812 4.90625C26.9271 5.55208 27.25 6.33333 27.25 7.25V25.125C27.25 26.0417 26.9271 26.8229 26.2812 27.4688C25.6354 28.1146 24.8542 28.4375 23.9375 28.4375H6.0625ZM6.0625 25.125H23.9375V11.875H6.0625V25.125Z"
+                      fill="#3EAE3C"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div style="padding: 0px 10px">
+                <p>Announce Time</p>
+                <h3>Every Day At 4PM UAE Time</h3>
+              </div>
+            </div>
+          </div>
+          <div class="drawCard drawCardActive">
+            <img src="./assets//images/img2.png" alt="" />
+            <img src="./assets//images/subImg.png" alt="" />
+            <div class="cardtags">
+              <button style="background: #00f">SILVER PEN</button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+              >
+                <rect
+                  x="0.499113"
+                  y="0.499113"
+                  width="29.0018"
+                  height="29.0018"
+                  rx="4.50089"
+                  fill="white"
+                  stroke="#DFDBE8"
+                  stroke-width="0.998226"
+                />
+                <mask
+                  id="mask0_1_569"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="7"
+                  y="7"
+                  width="16"
+                  height="16"
+                >
+                  <rect x="7" y="7" width="16" height="16" fill="#5C6978" />
+                </mask>
+                <g mask="url(#mask0_1_569)">
+                  <path
+                    d="M15.0007 21.4953L14.034 20.623C12.2895 19.0572 10.9033 17.6954 9.87532 16.5376C8.84776 15.3803 8.33398 14.1586 8.33398 12.8724C8.33398 11.8211 8.68398 10.9431 9.38398 10.2385C10.084 9.53394 10.9562 9.18164 12.0007 9.18164C12.5895 9.18164 13.1451 9.30735 13.6673 9.55877C14.1895 9.81063 14.634 10.1547 15.0007 10.5908C15.3673 10.1547 15.8118 9.81063 16.334 9.55877C16.8562 9.30735 17.4118 9.18164 18.0007 9.18164C19.0451 9.18164 19.9173 9.53394 20.6173 10.2385C21.3173 10.9431 21.6673 11.8211 21.6673 12.8724C21.6673 14.1586 21.1535 15.3803 20.126 16.5376C19.098 17.6954 17.7118 19.0572 15.9673 20.623L15.0007 21.4953ZM15.0007 19.6835C16.5895 18.2296 17.8758 16.977 18.8593 15.9256C19.8424 14.8743 20.334 13.8566 20.334 12.8724C20.334 12.2013 20.1118 11.6421 19.6673 11.1948C19.2229 10.7474 18.6673 10.5237 18.0007 10.5237C17.4784 10.5237 16.9951 10.6718 16.5507 10.968C16.1062 11.2646 15.8007 11.6421 15.634 12.1007H14.3673C14.2007 11.6421 13.8951 11.2646 13.4507 10.968C13.0062 10.6718 12.5229 10.5237 12.0007 10.5237C11.334 10.5237 10.7784 10.7474 10.334 11.1948C9.88954 11.6421 9.66732 12.2013 9.66732 12.8724C9.66732 13.8566 10.1591 14.8743 11.1427 15.9256C12.1258 16.977 13.4118 18.2296 15.0007 19.6835Z"
+                    fill="#D32053"
+                  />
+                </g>
+              </svg>
+            </div>
+            <h2>
+              <span>WIN:</span> <span style="color: #00142c">50 000</span>
+              <span style="color: #00142c; font-weight: 400">AED</span>
+            </h2>
+            <h4>
+              Entry Price:
+              <span style="color: #d32053; font-weight: 700">20.00 AED</span>
+            </h4>
+            <div class="cardActions">
+              <div class="quantity">
+                <button>-</button>
+                <button>1</button>
+                <button>+</button>
+              </div>
+              <div class="addToCartBtn">
+                <button
+                  style="
+                    height: 100%;
+                    width: 100%;
+                    background: none;
+                    border: none;
+                    color: white;
+                    font-size: 18px;
+                    font-weight: bold;
+                  "
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </div>
+            <div class="available">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                >
+                  <mask
+                    id="mask0_1_545"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="30"
+                    height="30"
+                  >
+                    <rect width="30" height="30" fill="#0D70F3" />
+                  </mask>
+                  <g mask="url(#mask0_1_545)">
+                    <path
+                      d="M13.6875 23.5625L8.625 18.5L10.9688 16.1562L13.6875 18.875L19.0938 13.4688L21.4375 15.8125L13.6875 23.5625ZM6.0625 28.4375C5.14583 28.4375 4.36458 28.1146 3.71875 27.4688C3.07292 26.8229 2.75 26.0417 2.75 25.125V7.25C2.75 6.33333 3.07292 5.55208 3.71875 4.90625C4.36458 4.26042 5.14583 3.9375 6.0625 3.9375H6.3125V1.5625H9.625V3.9375H20.375V1.5625H23.6875V3.9375H23.9375C24.8542 3.9375 25.6354 4.26042 26.2812 4.90625C26.9271 5.55208 27.25 6.33333 27.25 7.25V25.125C27.25 26.0417 26.9271 26.8229 26.2812 27.4688C25.6354 28.1146 24.8542 28.4375 23.9375 28.4375H6.0625ZM6.0625 25.125H23.9375V11.875H6.0625V25.125Z"
+                      fill="#3EAE3C"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div style="padding: 0px 10px">
+                <p>Announce Time</p>
+                <h3>Every Day At 4PM UAE Time</h3>
+              </div>
+            </div>
+          </div>
+          <div class="drawCard">
+            <img src="./assets//images/img3.png" alt="" />
+            <img src="./assets//images/subImg.png" alt="" />
+            <div class="cardtags">
+              <button style="background: #8c158c">Bronze Pen</button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                viewBox="0 0 30 30"
+                fill="none"
+              >
+                <rect
+                  x="0.499113"
+                  y="0.499113"
+                  width="29.0018"
+                  height="29.0018"
+                  rx="4.50089"
+                  fill="white"
+                  stroke="#DFDBE8"
+                  stroke-width="0.998226"
+                />
+                <mask
+                  id="mask0_1_569"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="7"
+                  y="7"
+                  width="16"
+                  height="16"
+                >
+                  <rect x="7" y="7" width="16" height="16" fill="#5C6978" />
+                </mask>
+                <g mask="url(#mask0_1_569)">
+                  <path
+                    d="M15.0007 21.4953L14.034 20.623C12.2895 19.0572 10.9033 17.6954 9.87532 16.5376C8.84776 15.3803 8.33398 14.1586 8.33398 12.8724C8.33398 11.8211 8.68398 10.9431 9.38398 10.2385C10.084 9.53394 10.9562 9.18164 12.0007 9.18164C12.5895 9.18164 13.1451 9.30735 13.6673 9.55877C14.1895 9.81063 14.634 10.1547 15.0007 10.5908C15.3673 10.1547 15.8118 9.81063 16.334 9.55877C16.8562 9.30735 17.4118 9.18164 18.0007 9.18164C19.0451 9.18164 19.9173 9.53394 20.6173 10.2385C21.3173 10.9431 21.6673 11.8211 21.6673 12.8724C21.6673 14.1586 21.1535 15.3803 20.126 16.5376C19.098 17.6954 17.7118 19.0572 15.9673 20.623L15.0007 21.4953ZM15.0007 19.6835C16.5895 18.2296 17.8758 16.977 18.8593 15.9256C19.8424 14.8743 20.334 13.8566 20.334 12.8724C20.334 12.2013 20.1118 11.6421 19.6673 11.1948C19.2229 10.7474 18.6673 10.5237 18.0007 10.5237C17.4784 10.5237 16.9951 10.6718 16.5507 10.968C16.1062 11.2646 15.8007 11.6421 15.634 12.1007H14.3673C14.2007 11.6421 13.8951 11.2646 13.4507 10.968C13.0062 10.6718 12.5229 10.5237 12.0007 10.5237C11.334 10.5237 10.7784 10.7474 10.334 11.1948C9.88954 11.6421 9.66732 12.2013 9.66732 12.8724C9.66732 13.8566 10.1591 14.8743 11.1427 15.9256C12.1258 16.977 13.4118 18.2296 15.0007 19.6835Z"
+                    fill="#D32053"
+                  />
+                </g>
+              </svg>
+            </div>
+            <h2>
+              <span>WIN:</span> <span style="color: #00142c">100 000</span>
+              <span style="color: #00142c; font-weight: 400">AED</span>
+            </h2>
+            <h4>
+              Entry Price:
+              <span style="color: #d32053; font-weight: 700">35.00 AED</span>
+            </h4>
+            <div class="cardActions">
+              <div class="quantity">
+                <button>-</button>
+                <button>1</button>
+                <button>+</button>
+              </div>
+              <div class="addToCartBtn">
+                <div class="addToCartBtnBg">
+                  <button>Add To Cart</button>
+                </div>
+              </div>
+            </div>
+            <div class="available">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                >
+                  <mask
+                    id="mask0_1_545"
+                    style="mask-type: alpha"
+                    maskUnits="userSpaceOnUse"
+                    x="0"
+                    y="0"
+                    width="30"
+                    height="30"
+                  >
+                    <rect width="30" height="30" fill="#0D70F3" />
+                  </mask>
+                  <g mask="url(#mask0_1_545)">
+                    <path
+                      d="M13.6875 23.5625L8.625 18.5L10.9688 16.1562L13.6875 18.875L19.0938 13.4688L21.4375 15.8125L13.6875 23.5625ZM6.0625 28.4375C5.14583 28.4375 4.36458 28.1146 3.71875 27.4688C3.07292 26.8229 2.75 26.0417 2.75 25.125V7.25C2.75 6.33333 3.07292 5.55208 3.71875 4.90625C4.36458 4.26042 5.14583 3.9375 6.0625 3.9375H6.3125V1.5625H9.625V3.9375H20.375V1.5625H23.6875V3.9375H23.9375C24.8542 3.9375 25.6354 4.26042 26.2812 4.90625C26.9271 5.55208 27.25 6.33333 27.25 7.25V25.125C27.25 26.0417 26.9271 26.8229 26.2812 27.4688C25.6354 28.1146 24.8542 28.4375 23.9375 28.4375H6.0625ZM6.0625 25.125H23.9375V11.875H6.0625V25.125Z"
+                      fill="#3EAE3C"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div style="padding: 0px 10px">
+                <p>Announce Time</p>
+                <h3>Every Day At 4PM UAE Time</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Lottery -->
+      <div class="card">
+        <div class="cardHead">
+          <h1>Lottery</h1>
+
+          <div class="cardButton">
+            <h3>View All</h3>
+          </div>
+        </div>
+
+        <div class="lotteryCards">
+          <div class="lotteryCard">
+            <div style="">
+              <p>Raffle Draw:</p>
+              <h2>50 000 AED</h2>
+            </div>
+            <div style="margin: 20px 0px">
+              <p>Grand Draw:</p>
+              <h2>100 000 AED</h2>
+            </div>
+            <p style="margin-top: 40px">Announce Time:</p>
+            <p>Saturday 22.o6.2023</p>
+            <div class="coutdown">
+              <div class="count">
+                <p>02</p>
+                <span>Day</span>
+              </div>
+              <div class="count">
+                <p>29</p>
+                <span>Hr</span>
+              </div>
+              <div class="count">
+                <p>54</p>
+                <span>Min</span>
+              </div>
+              <div class="count">
+                <p>05</p>
+                <span>Sec</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drawCard">
+          <img src="./assets//images/img4.png" alt="" />
+
+          <h4 style="font-size: 20px; font-weight: bold">
+            Buy one Mai Dubai <br />
+            Alkaline for
+          </h4>
+          <h2>
+            <span>35.00 AED</span>
+          </h2>
+          <div class="cardActions">
+            <div class="quantity">
+              <button>-</button>
+              <button>1</button>
+              <button>+</button>
+            </div>
+            <div class="addToCartBtn">
+              <div class="addToCartBtnBg">
+                <button>Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slots Card -->
+        <div class="slot">
+          <h2>Choose a number for each slot</h2>
+          <div class="activeSlots">
+            <h1>Slot 1</h1>
+            <ul>
+              <li><button>10</button></li>
+              <li><button>10</button></li>
+              <li><button>10</button></li>
+              <li><button>10</button></li>
+              <li><button>10</button></li>
+            </ul>
+          </div>
+          <div class="activeSlots slotPending">
+            <h1>Slot 2</h1>
+            <ul>
+              <li><button class="slotPending">10</button></li>
+              <li><button class="slotPending">10</button></li>
+              <li><button class="slotPending">10</button></li>
+              <li><button class="slotPending">10</button></li>
+              <li><button class="slotPending">10</button></li>
+            </ul>
+          </div>
+          <div class="activeSlots slotPending">
+            <h1>Slot 3</h1>
+            <ul>
+              <li><button class="slotPending">10</button></li>
+              <li><button class="slotPending">10</button></li>
+              <li><button class="slotPending">10</button></li>
+              <li><button class="slotPending">10</button></li>
+              <li><button class="slotPending">10</button></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Line -->
+        <div class="line" style="margin: 30px 0px">
+          <div
+            class=""
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background: #460bc6;
+            "
+          >
+            <h2>line 1</h2>
+
+            <button style="margin: 0px 20px">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="24"
+                viewBox="0 0 60 24"
+                fill="none"
+              >
+                <rect
+                  x="36.5"
+                  y="0.5"
+                  width="23"
+                  height="23"
+                  rx="4.5"
+                  fill="#D32053"
+                  stroke="white"
+                />
+                <mask
+                  id="mask0_1_690"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="40"
+                  y="4"
+                  width="16"
+                  height="16"
+                >
+                  <rect x="40" y="4" width="16" height="16" fill="white" />
+                </mask>
+                <g mask="url(#mask0_1_690)">
+                  <path
+                    d="M48.0005 12.9329L44.7339 16.1995C44.6116 16.3218 44.4561 16.3829 44.2672 16.3829C44.0783 16.3829 43.9227 16.3218 43.8005 16.1995C43.6783 16.0773 43.6172 15.9218 43.6172 15.7329C43.6172 15.544 43.6783 15.3884 43.8005 15.2662L47.0672 11.9995L43.8005 8.73288C43.6783 8.61066 43.6172 8.4551 43.6172 8.26621C43.6172 8.07732 43.6783 7.92177 43.8005 7.79954C43.9227 7.67732 44.0783 7.61621 44.2672 7.61621C44.4561 7.61621 44.6116 7.67732 44.7339 7.79954L48.0005 11.0662L51.2672 7.79954C51.3894 7.67732 51.545 7.61621 51.7339 7.61621C51.9227 7.61621 52.0783 7.67732 52.2005 7.79954C52.3227 7.92177 52.3839 8.07732 52.3839 8.26621C52.3839 8.4551 52.3227 8.61066 52.2005 8.73288L48.9339 11.9995L52.2005 15.2662C52.3227 15.3884 52.3839 15.544 52.3839 15.7329C52.3839 15.9218 52.3227 16.0773 52.2005 16.1995C52.0783 16.3218 51.9227 16.3829 51.7339 16.3829C51.545 16.3829 51.3894 16.3218 51.2672 16.1995L48.0005 12.9329Z"
+                    fill="white"
+                  />
+                </g>
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="23"
+                  height="23"
+                  rx="4.5"
+                  fill="white"
+                  stroke="white"
+                />
+                <mask
+                  id="mask1_1_690"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="4"
+                  y="4"
+                  width="16"
+                  height="16"
+                >
+                  <rect x="4" y="4" width="16" height="16" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask1_1_690)">
+                  <path
+                    d="M10.1159 11.0503L7.13255 8.06699C7.01033 7.94477 6.94922 7.78921 6.94922 7.60033C6.94922 7.41144 7.01033 7.25588 7.13255 7.13366C7.25477 7.01144 7.41033 6.95033 7.59922 6.95033C7.78811 6.95033 7.94366 7.01144 8.06589 7.13366L11.0492 10.117L10.1159 11.0503ZM13.9992 17.3337C13.8103 17.3337 13.652 17.2698 13.5242 17.142C13.3964 17.0142 13.3326 16.8559 13.3326 16.667C13.3326 16.4781 13.3964 16.3198 13.5242 16.192C13.652 16.0642 13.8103 16.0003 13.9992 16.0003H15.0659L12.9492 13.8837L13.8992 12.9337L15.9992 15.0337V14.0003C15.9992 13.8114 16.0631 13.6531 16.1909 13.5253C16.3187 13.3975 16.477 13.3337 16.6659 13.3337C16.8548 13.3337 17.0131 13.3975 17.1409 13.5253C17.2687 13.6531 17.3326 13.8114 17.3326 14.0003V16.667C17.3326 16.8559 17.2687 17.0142 17.1409 17.142C17.0131 17.2698 16.8548 17.3337 16.6659 17.3337H13.9992ZM7.13255 16.867C7.01033 16.7448 6.94922 16.5892 6.94922 16.4003C6.94922 16.2114 7.01033 16.0559 7.13255 15.9337L15.0659 8.00033H13.9992C13.8103 8.00033 13.652 7.93644 13.5242 7.80866C13.3964 7.68088 13.3326 7.52255 13.3326 7.33366C13.3326 7.14477 13.3964 6.98644 13.5242 6.85866C13.652 6.73088 13.8103 6.66699 13.9992 6.66699H16.6659C16.8548 6.66699 17.0131 6.73088 17.1409 6.85866C17.2687 6.98644 17.3326 7.14477 17.3326 7.33366V10.0003C17.3326 10.1892 17.2687 10.3475 17.1409 10.4753C17.0131 10.6031 16.8548 10.667 16.6659 10.667C16.477 10.667 16.3187 10.6031 16.1909 10.4753C16.0631 10.3475 15.9992 10.1892 15.9992 10.0003V8.93366L8.06589 16.867C7.94366 16.9892 7.78811 17.0503 7.59922 17.0503C7.41033 17.0503 7.25477 16.9892 7.13255 16.867Z"
+                    fill="#1C1B1F"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+
+          <ul class="lines">
+            <script>
+              for (var i = 1; i < 50; i++) {
+                var isActive =
+                  i === 10 || i === 18 || i === 26 || i === 39 || i === 41;
+                document.write(
+                  `<li><button class='${
+                    isActive ? "activeLine" : ""
+                  }'>${i}</button></li>`
+                );
+              }
+            </script>
+          </ul>
+        </div>
+      </div>
+      <!-- Scratch Card -->
+      <div class="card">
+        <div class="cardHead">
+          <h1>Scratch Cards</h1>
+
+          <div class="cardButton">
+            <h3>View All</h3>
+          </div>
+        </div>
+        <div>
+          <div class="drawCard">
+            <img src="./assets//images/scratch.png" alt="" />
+            <i class="gradintTest" style="font-weight: 500">WIN UP TO:</i>
+            <h1>
+              <span style="color: #00142c">50,000-100,000 AED</span>
+            </h1>
+            <h4>
+              Entry Price:
+              <span style="color: #d32053; font-weight: 700">10.00 AED</span>
+            </h4>
+            <div class="cardActions">
+              <div class="quantity">
+                <button>-</button>
+                <button>1</button>
+                <button>+</button>
+              </div>
+              <div class="addToCartBtn">
+                <div class="addToCartBtnBg">
+                  <button>Add To Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="drawCard">
+            <img src="./assets//images/scratch.png" alt="" />
+            <i class="gradintTest" style="font-weight: 500">WIN UP TO:</i>
+            <h1>
+              <span style="color: #00142c">50,000-100,000 AED</span>
+            </h1>
+            <h4>
+              Entry Price:
+              <span style="color: #d32053; font-weight: 700">10.00 AED</span>
+            </h4>
+            <div class="cardActions">
+              <div class="quantity">
+                <button>-</button>
+                <button>1</button>
+                <button>+</button>
+              </div>
+              <div class="addToCartBtn">
+                <div class="addToCartBtnBg">
+                  <button>Add To Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="drawCard">
+            <img src="./assets//images/scratch.png" alt="" />
+            <i class="gradintTest" style="font-weight: 500">WIN UP TO:</i>
+            <h1>
+              <span style="color: #00142c">50,000-100,000 AED</span>
+            </h1>
+            <h4>
+              Entry Price:
+              <span style="color: #d32053; font-weight: 700">10.00 AED</span>
+            </h4>
+            <div class="cardActions">
+              <div class="quantity">
+                <button>-</button>
+                <button>1</button>
+                <button>+</button>
+              </div>
+              <div class="addToCartBtn">
+                <div class="addToCartBtnBg">
+                  <button>Add To Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Winners Section -->
+    <section id="winners">
+      <h1>Winners Lists</h1>
+      <img
+        src="./assets/images/winners.svg"
+        alt="Winners Backgroun"
+        class="winnersBackground"
+      />
+
+      <div class="winners">
+        <div class="winnersTable">
+          <div class="winnersTableHead">
+            <h2>Winners Lists</h2>
+            <p>Add Your Name to the einner lists</p>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Ticket Number</th>
+                <th>Draw Date</th>
+                <th>Prize</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Haseen Amjad</td>
+                <td>MAB-35085</td>
+                <td>07/04/2023</td>
+                <td>AED 20,000</td>
+              </tr>
+              <tr>
+                <td>Haseen Amjad</td>
+                <td>MAB-35085</td>
+                <td>07/04/2023</td>
+                <td>AED 20,000</td>
+              </tr>
+              <tr>
+                <td>Haseen Amjad</td>
+                <td>MAB-35085</td>
+                <td>07/04/2023</td>
+                <td>AED 20,000</td>
+              </tr>
+              <tr>
+                <td>Haseen Amjad</td>
+                <td>MAB-35085</td>
+                <td>07/04/2023</td>
+                <td>AED 20,000</td>
+              </tr>
+              <tr>
+                <td>Haseen Amjad</td>
+                <td>MAB-35085</td>
+                <td>07/04/2023</td>
+                <td>AED 20,000</td>
+              </tr>
+              <tr>
+                <td>Haseen Amjad</td>
+                <td>MAB-35085</td>
+                <td>07/04/2023</td>
+                <td>AED 20,000</td>
+              </tr>
+              <tr>
+                <td>Haseen Amjad</td>
+                <td>MAB-35085</td>
+                <td>07/04/2023</td>
+                <td>AED 20,000</td>
+              </tr>
+              <tr>
+                <td>Haseen Amjad</td>
+                <td>MAB-35085</td>
+                <td>07/04/2023</td>
+                <td>AED 20,000</td>
+              </tr>
+              <tr>
+                <td>Haseen Amjad</td>
+                <td>MAB-35085</td>
+                <td>07/04/2023</td>
+                <td>AED 20,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="winnersVideo">
+          <img
+            src="./assets//images/video.png"
+            alt="vid"
+            class="winnersVideoimg"
+          />
+          <div class="winnersVideoPlayList">
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <rect
+                  x="0.499113"
+                  y="0.499113"
+                  width="39.0018"
+                  height="39.0018"
+                  rx="4.50089"
+                  fill="white"
+                  stroke="#DFDBE8"
+                  stroke-width="0.998226"
+                />
+                <mask
+                  id="mask0_1_453"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="10"
+                  y="10"
+                  width="20"
+                  height="20"
+                >
+                  <rect
+                    width="20"
+                    height="20"
+                    transform="matrix(4.37114e-08 1 1 -4.37114e-08 10 10)"
+                    fill="#00142C"
+                  />
+                </mask>
+                <g mask="url(#mask0_1_453)">
+                  <path
+                    d="M22.8132 16.1667L21.6465 15L16.6465 20L21.6465 25L22.8132 23.8333L18.9798 20L22.8132 16.1667Z"
+                    fill="#00142C"
+                  />
+                </g>
+              </svg>
+            </button>
+            <div class="playlists">
+              <img src="./assets/images/image 13.png" alt="" />
+              <img src="./assets/images/image 16.png" alt="" />
+              <img src="./assets/images/image 16.png" alt="" />
+              <img src="./assets/images/image 16.png" alt="" />
+              <img src="./assets/images/image 16.png" alt="" />
+              <img src="./assets/images/image 16.png" alt="" />
+              <img src="./assets/images/image 16.png" alt="" />
+            </div>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+              >
+                <rect
+                  x="0.499113"
+                  y="0.499113"
+                  width="39.0018"
+                  height="39.0018"
+                  rx="4.50089"
+                  fill="white"
+                  stroke="#DFDBE8"
+                  stroke-width="0.998226"
+                />
+                <mask
+                  id="mask0_1_448"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="10"
+                  y="10"
+                  width="20"
+                  height="20"
+                >
+                  <rect
+                    x="30"
+                    y="10"
+                    width="20"
+                    height="20"
+                    transform="rotate(90 30 10)"
+                    fill="#00142C"
+                  />
+                </mask>
+                <g mask="url(#mask0_1_448)">
+                  <path
+                    d="M17.1868 16.1667L18.3535 15L23.3535 20L18.3535 25L17.1868 23.8333L21.0202 20L17.1868 16.1667Z"
+                    fill="#00142C"
+                  />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Map -->
+      <div class="map">
+        <h1>Find Us</h1>
+        <div class="mapSubContent">
+          <p>
+            Business Hours <br />
+            <span>Everyday: 9am - 9pm GMT</span>
+          </p>
+          <p>
+            Write us an email <br />
+            <span>support@millionaireaisle.com</span>
+          </p>
+        </div>
+      </div>
+      <div class="liveMap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.5688620165447!2d55.25831347609581!3d25.184031632232625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69d047294591%3A0x9ad7e353822dc797!2sThe%20Citadel%20Tower!5e0!3m2!1sen!2sbd!4v1703699831566!5m2!1sen!2sbd"
+           
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Lattest News -->
+    <section id="lattestNews">
+      <div class="lattestNewsHead">
+        <h1 class="lattestNewsHeadTitle">Lattest News</h1>
+        <div class="cardButton">
+          <button>View All</button>
+        </div>
+      </div>
+      <div class="lattestNewsContent">
+        <div class="lattestNewsContentCard" style="flex: 2">
+          <img src="./assets/images/news/1.png" alt="" />
+          <div style="padding: 0px 10px">
+            <h2>At-Home Valentine’s Day Ideas</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Id
+              ornare arcu odio ut sem nulla. Sagittis aliquam malesuada bibendum
+              arcu vitae elementum curabitur.
+            </p>
+            <button>Read More</button>
+          </div>
+        </div>
+        <div class="lattestNewsContentCard" style="flex: 1">
+          <img src="./assets/images/news/2.png" alt="" />
+          <div style="padding: 0px 10px">
+            <h2>At-Home Valentine’s Day Ideas</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Id
+              ornare arcu odio ut sem nulla. Sagittis aliquam malesuada bibendum
+              arcu vitae elementum curabitur.
+            </p>
+            <button>Read More</button>
+          </div>
+        </div>
+        <div class="lattestNewsContentCard" style="flex: 1">
+          <img src="./assets/images/news/3.png" alt="" />
+          <div style="padding: 0px 10px">
+            <h2>At-Home Valentine’s Day Ideas</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Id
+              ornare arcu odio ut sem nulla. Sagittis aliquam malesuada bibendum
+              arcu vitae elementum curabitur.
+            </p>
+            <button>Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download the App -->
+    <section id="downloadApp">
+      <div class="downloadApp">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1920 825"
+          fill="none"
+        >
+          <path
+            d="M969.742 20.4564C445.272 -35.7083 221.5 31.4163 0 129.103V825H1920V0.15033C1630 58.1285 1476.5 74.7242 969.742 20.4564Z"
+            fill="url(#paint0_linear_1_398)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_1_398"
+              x1="960"
+              y1="775"
+              x2="960"
+              y2="-5.19678e-05"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#EEEBF5" stop-opacity="0" />
+              <stop offset="1" stop-color="#EEEBF5" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <img src="./assets/images/downloadApp.png" class="bglogo" alt="" />
+        <div class="downloadContent">
+          <div class="downloadContentLeft">
+            <h1>
+              Download <br />
+              The App Now
+            </h1>
+            <p>
+              You can easily download our application on App Store and Google
+              play
+            </p>
+            <div class="downloadIcons">
+              <div>
+                <img src="./assets/images/Google Play.png" alt="" />
+              </div>
+              <div style="margin-left: 20px">
+                <img src="./assets/images/App Store.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="downloadContentRight">
+            <div class="mobileScreen">
+              <img src="./assets/images/Screen.png" alt="" />
+            </div>
+            <div class="mobileScreen">
+              <img src="./assets/images/Screen.png" alt="" />
+            </div>
+            <div class="mobileScreen">
+              <img src="./assets/images/Screen.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+
+    <footer>
+      <div class="footer">
+        <div class="footerContent">
+          <div class="footerMenus">
+            <div class="footerMenusChild">
+              <img src="./assets/logo.png" alt="" />
+              <p style="padding: 10px 0px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui id
+                lobortis .
+              </p>
+              <div class="footerIcons">
+                <button class="footerIconButton">
+                  <i class="fa-brands fa-facebook"></i>
+                </button>
+                <button class="footerIconButton">
+                  <i class="fa-brands fa-linkedin"></i>
+                </button>
+                <button class="footerIconButton">
+                  <i class="fa-brands fa-instagram"></i>
+                </button>
+                <button class="footerIconButton">
+                  <i class="fa-brands fa-youtube"></i>
+                </button>
+              </div>
+            </div>
+            <div class="footerMenusChild">
+              <h2>Quick Links</h2>
+              <ul>
+                <li><a href="#">Terms Of Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+              </ul>
+            </div>
+            <div class="footerMenusChild">
+              <h2>Address</h2>
+              <ul>
+                <li>
+                  Business Hours <br />
+                  Everyday: 9am - 9pm GMT
+                </li>
+                <li>
+                  Write us an email <br />
+                  support@millionaireaisle.com
+                </li>
+              </ul>
+            </div>
+            <div class="footerMenusChild">
+              <h2>Get In Touch</h2>
+              <p style="margin: 20px 0px">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
+              </p>
+              <div>
+                <input type="email" placeholder="Email" name="" id="" />
+                <input type="submit" value="Subscribe" name="" id="" />
+              </div>
+            </div>
+          </div>
+          <div class="footerApps">
+            <div>
+              <h2 style="text-align: center; margin-left: 100px">
+                Download The App Now
+              </h2>
+            </div>
+            <div class="downloadIcons" style="display: flex">
+              <div>
+                <img src="./assets/images/Google Play.png" alt="" />
+              </div>
+              <div style="margin-left: 20px">
+                <img src="./assets/images/App Store.png" alt="" />
+              </div>
+            </div>
+            <div>
+              <img src="./assets/images/footerMobile.png" alt="" />
+            </div>
+          </div>
+          <p
+            style="
+              display: flex;
+              font-size: 16px;
+              justify-content: space-between;
+            "
+          >
+            <span>© millionaireaisle 2023. All rights reserved.</span>
+            <span>Design & Developed by Royex Technologies</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
